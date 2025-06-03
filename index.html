@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashMate - P2P Lending Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="nav">
+        <div class="log">
+            <div class="cash">
+                Cash
+            </div>
+            <div class="mate">
+                Mate
+            </div>
+
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#transactions">How it Works</a></li>
+                <li><a href="#send-money">For Borrowers</a></li>
+                <li><a href="#request-money">For Lenders</a></li>
+                <li><a href="#profile">Premium</a></li>
+
+            </ul>
+        </div>
+        <div class="but">
+            <button class="log_in">Log In</button>
+            <button class="sign_up">Sign Up</button>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-text1">
+                    Next Generation
+                </div>
+                <div class="hero-text2">
+                    P2P Lending
+                </div>
+                <div class="hero-text3">
+                    Connect directly with verified borrowers and lenders. No middlemen, better rates, complete transparency.
+                </div>
+                <div class="hero-button">
+                    <button class="hero-button1">Borrow Now</button>
+                    <button class="hero-button2">Start Lending</button>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Bank-Level Security</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quick Approvals</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-container">
+                <div class="calculator">
+                    <h3>EMI Calculator</h3>
+                    <div class="input-group">
+                        <label for="loan-amount">Loan Amount (₹)</label>
+                        <div class="input-with-icon">
+                            <input type="number" id="loan-amount" value="500000" min="10000" step="1000">
+                            <span class="input-icon">₹</span>
+                        </div>
+                        <div class="range-slider">
+                            <input type="range" id="loan-amount-slider" min="10000" max="5000000" value="500000" step="1000">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="interest-rate">Interest Rate (% p.a.)</label>
+                        <div class="input-with-icon">
+                            <input type="number" id="interest-rate" value="10.5" min="1" max="30" step="0.1">
+                            <span class="input-icon">%</span>
+                        </div>
+                        <div class="range-slider">
+                            <input type="range" id="interest-rate-slider" min="1" max="30" value="10.5" step="0.1">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="loan-tenure">Loan Tenure (years)</label>
+                        <div class="input-with-icon">
+                            <input type="number" id="loan-tenure" value="5" min="1" max="30" step="1">
+                            <span class="input-icon">yrs</span>
+                        </div>
+                        <div class="range-slider">
+                            <input type="range" id="loan-tenure-slider" min="1" max="30" value="5" step="1">
+                        </div>
+                    </div>
+                    <div class="emi-summary">
+                        <div class="emi-amount">
+                            <span>EMI Amount</span>
+                            <span id="emi-amount">₹10,745</span>
+                        </div>
+                        <button id="calculate-btn">Calculate EMI</button>
+                    </div>
+                </div>
+                <div class="pie-chart-container">
+                    <div class="chart-wrapper">
+                        <div class="chart-outer">
+                            <canvas id="emi-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #4CAF50;"></span>
+                            <span>Principal</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background-color: #2196F3;"></span>
+                            <span>Interest</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero2">
+        <div class="hero2-text1">
+            Trusted by thousands across India
+        </div>
+        <div class="hero2-text2">
+            Join our growing community of borrowers and lenders who trust CashMate for their  <br>financial needs.
+        </div>
+        <div class="hero2-stats">
+            <div class="hero2-stats-item">
+                <span>120Cr+</span>
+                <span>Loans Funded</span>
+            </div>
+            <div class="hero2-stats-item">
+                <span>50,000+</span>
+                <span>Active Users</span>
+            </div>
+            <div class="hero2-stats-item">
+                <span>12%</span>
+                <span>Avg. Returns for Lenders</span>
+            </div>
+            <div class="hero2-stats-item">
+                <span>4.8/5</span>
+                <span>Customer Rating</span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="hero3">
+        <h2 class="hero3-head">How CashMate Works</h2>
+        <p class="hero3-text">Simple, transparent, and secure peer-to-peer lending platform.</p>
+        
+        <div class="hero3-cardline">
+            <!-- Card 1 -->
+            <div class="hero3-card">
+                <div class="hero3-card-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3 class="hero3-card-title">1. Create Your Profile</h3>
+                <p class="hero3-card-desc">Sign up in minutes with your basic details and complete your KYC verification.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="hero3-card">
+                <div class="hero3-card-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3 class="hero3-card-title">2. Connect & Fund</h3>
+                <p class="hero3-card-desc">Decide whether you want to borrow or invest, and set your terms.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="hero3-card">
+                <div class="hero3-card-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="hero3-card-title">3. Repay & Earn</h3>
+                <p class="hero3-card-desc">Our smart algorithm matches you with the best lending or borrowing opportunities.</p>
+            </div>
+            <!-- Card 4 -->
+        </div>
+    </div>
+    <div class="hero4">
+        <div class="hero4-box1">
+            <div class="hero4-head1">
+                🔒 Trust Chain
+            </div>
+            <div class="hero4-text1">
+                Our unique community verification system builds trust between borrowers and lenders.
+            </div>
+            <div class="hero4-text1-2">
+                <i class="fas fa-check-circle"></i> Community Vouches
+            </div>
+            <div class="hero4-text1-2">
+                <i class="fas fa-check-circle"></i> Verified Badge
+            </div>
+            <div class="hero4-text1-2">
+                <i class="fas fa-check-circle"></i> Higher Trust Score
+            </div>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i> Bank-Level Security
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-lock"></i> 256-bit Encryption
+                </div>
+                <button class="hero4-button">Learn More About Trust Chain</button>
+            </div>
+        </div>
+        
+        <div class="hero4-box2">
+            <div class="trust-card">
+                <div class="trust-card-header">
+                    <div class="trust-card-title">Personal Loan</div>
+                    <div class="trust-card-amount">₹50,000</div>
+                </div>
+                <div class="trust-card-desc">
+                    Looking for a personal loan with flexible repayment options and competitive interest rates.
+                </div>
+                <div class="trust-card-footer">
+                    <div class="trust-card-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.0 (128 reviews)</span>
+                    </div>
+                    <div class="trust-card-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trust-card">
+                <div class="trust-card-header">
+                    <div class="trust-card-title">Business Expansion</div>
+                    <div class="trust-card-amount">₹2,00,000</div>
+                </div>
+                <div class="trust-card-desc">
+                    Seeking investment to expand my small business and hire additional staff.
+                </div>
+                <div class="trust-card-footer">
+                    <div class="trust-card-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5 (89 reviews)</span>
+                    </div>
+                    <div class="trust-card-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="reviews-header">
+            <h2 class="reviews-title">What Our Users Say</h2>
+            <p class="reviews-subtitle">Don't just take our word for it. See what our community has to say about CashMate.</p>
+        </div>
+        
+        <div class="reviews-container">
+            <!-- Review Card 1 -->
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                </div>
+                <p class="review-text">"Life-changing platform! Got my loan approved in 24 hours when no bank would help. The interest rates are fair and the process was so smooth."</p>
+                <div class="review-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Rahul Sharma</h4>
+                        <p>Small Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review Card 2 -->
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5</span>
+                </div>
+                <p class="review-text">"As an investor, I'm getting better returns than any bank FD. The auto-invest feature makes it so easy to manage my portfolio."</p>
+                <div class="review-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Priya Patel</h4>
+                        <p>Investor</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Review Card 3 -->
+            <div class="review-card">
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                </div>
+                <p class="review-text">"The customer support team is amazing! They guided me through my first investment and were patient with all my questions."</p>
+                <div class="review-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Amit Desai</h4>
+                        <p>First-time Investor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="reviews-cta">
+            <button class="cta-button">Read More Reviews</button>
+        </div>
+    </div>
+
+    <!-- Ready to Get Started Section -->
+    <div class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Ready to get started?</h2>
+            <p class="cta-subtitle">Join thousands of Indians who are already benefiting from our peer-to-peer lending platform.</p>
+            <div class="cta-buttons">
+                <button class="cta-primary">Create Account</button>
+                <button class="cta-secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3 class="footer-logo">CashMate</h3>
+                <p class="footer-about">India's trusted peer-to-peer lending platform connecting borrowers and lenders directly.</p>
+                <div class="payment-methods">
+                    <span>Payment Methods</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">For Borrowers</a></li>
+                    <li><a href="#">For Lenders</a></li>
+                    <li><a href="#">Premium</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Compliance</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact Us</h4>
+                <address class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Financial District, Mumbai, Maharashtra 400001</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> support@cashmate.in</p>
+                </address>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 CashMate. All rights reserved. <span>RBI Registered NBFC-P2P.</span></p>
+            <p class="disclaimer">CashMate is a platform that connects borrowers and lenders. We do not lend money directly.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
