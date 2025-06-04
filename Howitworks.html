@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How CashMate Works - P2P Lending Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="log">
+            <span class="cash">Cash</span>
+            <span class="mate">Mate</span>
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Howitworks.html">How It Works</a></li>
+                <li><a href="#loans">For Borrowers</a></li>
+                <li><a href="#invest">For Lenders</a></li>
+                <li><a href="#about">Premium</a></li>
+            </ul>
+        </div>
+        <div class="but">
+            <button class="log_in">Log In</button>
+            <button class="sign_up">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="herom">
+        <div class="herom-content">
+            <h1 class="herom-title">How CashMate Works</h1>
+            <p class="herom-subtitle">
+                CashMate is a secure peer-to-peer lending platform where verified borrowers and trusted lenders connect, apply, and manage personal loans—all without the hassle of banks.
+            </p>
+        </div>
+    </section>
+
+    <!-- Process Flow Diagram -->
+    <section class="process-section">
+        <h2 class="section-title">
+            <i class="fas fa-sync"></i> Process Flow Diagram</h2>
+        <div class="process-container">
+            <div class="journey-column">
+                <h3 class="journey-title">
+                    <i class="fas fa-user-plus"></i>
+                    Borrower Journey
+                </h3>
+                <div class="journey-step" data-step="register-borrower">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Register</div>
+                        <div class="step-desc">Sign up using phone & email</div>
+                    </div>
+                    <div class="status-indicator completed"></div>
+                </div>
+                <div class="journey-step" data-step="kyc-borrower">
+                    <div class="step-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Complete KYC</div>
+                        <div class="step-desc">Upload documents & verify identity</div>
+                    </div>
+                    <div class="status-indicator status-pending"></div>
+                </div>
+                <div class="journey-step" data-step="apply-loan">
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Submit Loan Application</div>
+                        <div class="step-desc">Enter amount, purpose, tenure</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="get-vouches">
+                    <div class="step-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Get Community Vouches</div>
+                        <div class="step-desc">Gain community trust & verification</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="approval">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Wait for Approval</div>
+                        <div class="step-desc">Platform review & lender matching</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="receive-funds">
+                    <div class="step-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Receive Funds</div>
+                        <div class="step-desc">Money transferred to your account</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="repay-emi">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Repay EMI</div>
+                        <div class="step-desc">Monthly EMI payments</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+            </div>
+
+            <div class="journey-column">
+                <h3 class="journey-title">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Lender Journey
+                </h3>
+                <div class="journey-step" data-step="register-lender">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Register</div>
+                        <div class="step-desc">Sign up and verify identity</div>
+                    </div>
+                    <div class="status-indicator completed"></div>
+                </div>
+                <div class="journey-step" data-step="kyc-lender">
+                    <div class="step-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Complete Verification</div>
+                        <div class="step-desc">Financial verification & compliance</div>
+                    </div>
+                    <div class="status-indicator status-pending"></div>
+                </div>
+                <div class="journey-step" data-step="browse-loans">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Browse Loan Requests</div>
+                        <div class="step-desc">Review borrower profiles & requests</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="assess-risk">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Assess Risk</div>
+                        <div class="step-desc">Review credit scores & vouches</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="fund-loan">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Fund Loan</div>
+                        <div class="step-desc">Transfer funds to borrower</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="receive-returns">
+                    <div class="step-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Receive Returns</div>
+                        <div class="step-desc">Monthly EMI + interest earnings</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="journey-step" data-step="track-portfolio">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-title">Track Portfolio</div>
+                        <div class="step-desc">Monitor all investments & returns</div>
+                    </div>
+                    <div class="status-indicator"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color completed"></div>
+                <span>Completed</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color in-progress"></div>
+                <span>In Progress</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Steps Section -->
+    <section class="detailed-steps">
+        <h2 class="section-title"><i class="fa-solid fa-pen-to-square"></i>
+            Detailed Step-by-Step Guide</h2>
+        <div class="steps-container">
+            <div class="steps-column">
+                <h3 class="column-title">
+                    <i class="fas fa-user"></i>
+                    For Borrowers
+                </h3>
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h4>Create Your Account</h4>
+                        <p>Sign up with your mobile number and email. Verify your phone number through OTP.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h4>Complete KYC Verification</h4>
+                        <p>Upload your Aadhar, PAN, and bank account details. Our team verifies within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h4>Submit Loan Application</h4>
+                        <p>Fill out loan amount, purpose, tenure, and employment details. Upload income proof.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <h4>Get Community Vouches</h4>
+                        <p>Invite friends and family to vouch for your credibility. This builds trust with lenders.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-info">
+                        <h4>Loan Approval</h4>
+                        <p>Our algorithm matches you with suitable lenders based on your profile and risk assessment.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">6</div>
+                    <div class="step-info">
+                        <h4>Receive Funds</h4>
+                        <p>Once approved, funds are transferred directly to your bank account within 24 hours.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">7</div>
+                    <div class="step-info">
+                        <h4>Repay EMI</h4>
+                        <p>Set up auto-debit for hassle-free monthly payments. Track your loan status in the app.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="steps-column">
+                <h3 class="column-title">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    For Lenders
+                </h3>
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h4>Register as Lender</h4>
+                        <p>Create your account and complete identity verification to start lending securely.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h4>Financial Verification</h4>
+                        <p>Verify your income and investment capacity. Upload bank statements and ITR.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h4>Browse Loan Requests</h4>
+                        <p>Explore verified borrower profiles with detailed information and risk ratings.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <h4>Risk Assessment</h4>
+                        <p>Review credit scores, employment history, and community vouches before deciding.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <div class="step-info">
+                        <h4>Fund the Loan</h4>
+                        <p>Choose loan amount and interest rate. Funds are held securely until loan agreement.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">6</div>
+                    <div class="step-info">
+                        <h4>Earn Returns</h4>
+                        <p>Receive monthly EMI payments with interest directly to your bank account.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">7</div>
+                    <div class="step-info">
+                        <h4>Portfolio Management</h4>
+                        <p>Track all your investments, returns, and borrower performance in one dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Tutorials Section -->
+    <section class="video-section">
+        <h2 class="section-title"><i class="fa-solid fa-video"></i>
+            Video Tutorials</h2>
+        <div class="video-grid">
+            <div class="video-card" onclick="openVideo('borrower-guide')">
+                <div class="video-thumbnail">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-duration">5:30</div>
+                </div>
+                <div class="video-info">
+                    <h4 class="video-title">Complete Borrower Guide</h4>
+                    <p class="video-desc">Step-by-step tutorial on how to apply for a loan and get approved quickly.</p>
+                </div>
+            </div>
+            <div class="video-card" onclick="openVideo('lender-guide')">
+                <div class="video-thumbnail">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-duration">4:15</div>
+                </div>
+                <div class="video-info">
+                    <h4 class="video-title">Lender's Investment Guide</h4>
+                    <p class="video-desc">Learn how to evaluate borrower profiles and make profitable investments.</p>
+                </div>
+            </div>
+            <div class="video-card" onclick="openVideo('kyc-process')">
+                <div class="video-thumbnail">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-duration">3:45</div>
+                </div>
+                <div class="video-info">
+                    <h4 class="video-title">KYC Verification Process</h4>
+                    <p class="video-desc">Quick guide on completing your KYC verification successfully.</p>
+                </div>
+            </div>
+            <div class="video-card" onclick="openVideo('community-vouching')">
+                <div class="video-thumbnail">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="video-duration">2:30</div>
+                </div>
+                <div class="video-info">
+                    <h4 class="video-title">Community Vouching System</h4>
+                    <p class="video-desc">Understanding how community vouches work and why they matter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification Process Section -->
+    <section class="verification-section">
+        <h2 class="section-title">🔐 Our Verification Process</h2>
+        <div class="verification-steps">
+            <div class="verification-step">
+                <div class="verification-icon">
+                    <i class="fas fa-id-badge"></i>
+                </div>
+                <div class="verification-content">
+                    <h4 class="verification-title">Identity Verification</h4>
+                    <p class="verification-desc">We verify your identity using government-issued documents like Aadhar and PAN cards to ensure authenticity.</p>
+                </div>
+            </div>
+            <div class="verification-step">
+                <div class="verification-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="verification-content">
+                    <h4 class="verification-title">Bank Account Verification</h4>
+                    <p class="verification-desc">Your bank account is verified through micro-deposits and account statement analysis for financial credibility.</p>
+                </div>
+            </div>
+            <div class="verification-step">
+                <div class="verification-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="verification-content">
+                    <h4 class="verification-title">Employment Verification</h4>
+                    <p class="verification-desc">We verify your employment status and income through salary slips, employment letters, and HR verification.</p>
+                </div>
+            </div>
+            <div class="verification-step">
+                <div class="verification-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="verification-content">
+                    <h4 class="verification-title">Social Verification</h4>
+                    <p class="verification-desc">Community vouches from friends and family add an extra layer of trust and credibility to your profile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">❓ Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>How long does the loan approval process take?</h4>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The loan approval process typically takes 24-48 hours after all documents are verified and community vouches are received. Emergency loans can be processed within 6-12 hours.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>What documents are required for KYC?</h4>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You need to provide Aadhar card, PAN card, bank account statements (3 months), salary slips (3 months), and employment verification letter from your employer.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>How does the community vouching system work?</h4>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can invite friends and family to vouch for your credibility. They verify your identity and character through the app, which increases lender confidence and improves your loan approval chances.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>What are the interest rates for loans?</h4>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Interest rates vary from 8-18% annually based on your credit profile, loan amount, tenure, and risk assessment. Better profiles get lower interest rates.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h4>Is my money safe as a lender?</h4>
+                    <i class="fas fa-chevron-down faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we have multiple safety measures including borrower verification, credit scoring, insurance coverage, and legal recovery processes to protect lender investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Testimonials Section -->
+    <section class="trust-section">
+        <h2 class="section-title">🌟 Trusted by Thousands</h2>
+        <div class="trust-container">
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="trust-stat-number">50,000+</div>
+                    <div class="trust-stat-label">Happy Users</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">₹100 Cr+</div>
+                    <div class="trust-stat-label">Loans Disbursed</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">98.5%</div>
+                    <div class="trust-stat-label">Repayment Rate</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-stat-number">4.8/5</div>
+                    <div class="trust-stat-label">User Rating</div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"CashMate helped me get a loan for my business expansion within 24 hours. The process was transparent and hassle-free!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <h5>Rajesh Sharma</h5>
+                            <p>Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"As a lender, I've earned consistent returns of 12-15% annually. The platform is secure and borrower verification is excellent."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PK</div>
+                        <div class="author-info">
+                            <h5>Priya Krishnan</h5>
+                            <p>Software Engineer & Investor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The community vouching system is brilliant. It adds trust and makes the whole lending process more personal and secure."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h5>Amit Mehta</h5>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure Section -->
+    <section class="fee-section">
+        <h2 class="section-title">💰 Transparent Fee Structure</h2>
+        <div class="fee-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>For Borrowers</th>
+                        <th>For Lenders</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Registration</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td>KYC Verification</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td>Loan Processing</td>
+                        <td class="fee-amount">2% of loan amount</td>
+                        <td class="fee-amount">-</td>
+                    </tr>
+                    <tr>
+                        <td>Platform Commission</td>
+                        <td class="fee-amount">-</td>
+                        <td class="fee-amount">1% of interest earned</td>
+                    </tr>
+                    <tr>
+                        <td>EMI Processing</td>
+                        <td class="fee-amount">₹25 per EMI</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td>Late Payment Fee</td>
+                        <td class="fee-amount">₹500 + 2% penalty</td>
+                        <td class="fee-amount">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Ready to Get Started?</h2>
+            <p class="cta-subtitle">Join thousands of users who trust CashMate for their lending and borrowing needs</p>
+            <div class="cta-buttons">
+                <button class="cta-btn cta-primary" onclick="openModal('apply-loan')">Apply for Loan</button>
+                <button class="cta-btn cta-secondary" onclick="openModal('start-lending')">Start Lending</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Get Started</h3>
+            <p id="modal-text">Please download our mobile app to continue with the application process.</p>
+        </div>
+    </div>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="stickyCTA" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+        Back to Top
+    </div>
+
+    <!--  footer -->
+
+     <!-- Footer -->
+     <footer class="main-footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3 class="footer-logo">CashMate</h3>
+                <p class="footer-about">India's trusted peer-to-peer lending platform connecting borrowers and lenders directly.</p>
+                <div class="payment-methods">
+                    <span>Payment Methods</span>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">For Borrowers</a></li>
+                    <li><a href="#">For Lenders</a></li>
+                    <li><a href="#">Premium</a></li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Compliance</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact Us</h4>
+                <address class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Financial District, Mumbai, Maharashtra 400001</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fas fa-envelope"></i> support@cashmate.in</p>
+                </address>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 CashMate. All rights reserved. <span>RBI Registered NBFC-P2P.</span></p>
+            <p class="disclaimer">CashMate is a platform that connects borrowers and lenders. We do not lend money directly.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
